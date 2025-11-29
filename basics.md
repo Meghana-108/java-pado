@@ -1,4 +1,5 @@
 JAVA 
+=>java is case sensitive
 
 public class Main {
   public static void main(String[] args) {
@@ -6,34 +7,11 @@ public class Main {
   }
 }
 
-EXPLAINATION
-public
-	• It is an access modifier
-	• Means the class/method can be accessed from anywhere in the project
-	• Required for the main class and main method to run
+Datatypes
+<img width="1051" height="726" alt="image" src="https://github.com/user-attachments/assets/18fd65fe-b3f8-4f27-b161-3668a2447416" />
 
-class
-	• Keyword used to define a class
-	• A class is a blueprint for objects (contains data & behavior)
-Main
-	• The name of the class
-	• Must match the file name (Main.java)
-	• Execution of a Java program starts with a class
-{ } (curly braces)
-	• Define the block or scope
-	• Here they contain everything inside the class or method
-public
-	• Same meaning as above
-	• The main() method must be public so JVM can call it
+=>if we use final keywork we cannot reassign that variable 
+example:
+final int myNum = 15;
+myNum = 20;  // will generate an error: cannot assign a value to a final variable
 
-static
-	• Belongs to the class, not an object
-	• So JVM can run main() without creating an object of Main class
-void
-	• Return type of the method
-	• Means main() does not return any value
-main
-	• The entry point for every Java program
-	• JVM looks for this name to start execution
-	• If missing → program won’t run
-<img width="658" height="934" alt="image" src="https://github.com/user-attachments/assets/6e39be8e-4a4b-4df0-85cc-5d8b3539d173" />
