@@ -7,6 +7,18 @@ public class Main {
   }
 }
 
+VARIABLE 
+Mixing Text and Numbers
+Be careful when combining text and numbers in the same line of code. Without parentheses, Java will treat the numbers as text after the first string
+int x = 5;
+int y = 6;
+
+System.out.println("The sum is " + x + y);   // Prints: The sum is 56
+System.out.println("The sum is " + (x + y)); // Prints: The sum is 11
+
+
+
+
 Datatypes
 <img width="1051" height="726" alt="image" src="https://github.com/user-attachments/assets/18fd65fe-b3f8-4f27-b161-3668a2447416" />
 
