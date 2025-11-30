@@ -81,3 +81,26 @@ System.out.println(x == y); // false Because → different Heap objects
   example :
       import java.util.Arrays;
       Arrays.sort(marks);//we should include the package at the top inorder to use this
+ 
+===============================================================================
+Math class
+=>Math.max(5,6)//6
+=>Math.min(5,6)//5
+=>Math.random()//it will print in long format
+ to get it in int 
+ =>(int)Math.random()//this will provide 0 only since th value is always in range of 0-1 so in int
+ it will be 0 alwyas ,inorder to get big in values u can multiply it with 100 or something
+
+ =================================================================================
+ INPUT
+ inorder to take input we make use of Scanner classs
+ import java.util.Scanner;
+ Scanner sc=new Scanner(System.in);
+ System.out.println("enter your age:");
+ int age=sc.nextInt();
+ sout(age);
+ System.out.println("enter your name:");
+ string name=sc.next();//this will just take tokens like "megha" not "meghana is good girl" 
+  string name=sc.nextLine();//this will take a sentence as input 
+ sout(name);
+ 
