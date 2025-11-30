@@ -103,4 +103,63 @@ Math class
  string name=sc.next();//this will just take tokens like "megha" not "meghana is good girl" 
   string name=sc.nextLine();//this will take a sentence as input 
  sout(name);
- 
+
+ ======================================================================================
+Abstract Class — Key Rules "USE EXTENDS"
+Abstraction means showing only essential features and hiding internal details from the user.
+✔ Can have both abstract and non-abstract methods
+✔ Can have constructors
+✔ Cannot be instantiated (cannot create object directly)
+✔ Must be extended by a subclass
+✔ Subclass must override all abstract methods
+✔ Can have variables, but no objects can be created
+
+ =>when ur inheriting friom parent think ur parent class that is abstract and has normal function now being child it can use ethat normal function right 
+ now when i create obj of child it can use its function that time first the child s function is printed then comes the parent one
+ "For overridden methods → Child method is always executed"
+
+ =>when it comes to constructor the parent constructor is called first then the child 
+ child doesnt exist without the parent
+ class Animal {
+    Animal() {
+        System.out.println("Animal constructor");
+    }
+}
+class Horse extends Animal {
+    Horse() {
+        super(); // inserted even if you don’t write it
+        System.out.println("Horse constructor");
+    }
+}
+new Horse();
+
+output:
+Animal constructor
+Horse constructor
+
+"THIS IS CONSTRUCTOR CHAINING"
+
+===============================================================================================
+interface "USES IMPLEMENTS"
+An interface is a contract or blueprint in Java that contains only method declarations (no implementation).
+It tells what must be done, but not how it will be done.
+
+➡️ The class that implements the interface must provide the method implementations.
+rules:
+All are by default public,static and final
+All methods are Public and abstract by default (until Java 7)
+✔ From Java 8 → Interfaces can have:
+      default methods (with body)
+      static methods (with body)
+❌ Cannot have constructors
+❌ Cannot create objects
+❌ Cannot have non-final or non-static variables
+==========================================================================================
+
+"MULTIPLE INHERITANCE in java is not done using classs but can be done using interfaces"
+
+=============================================================================================
+STATIC
+=>this is not for single object its same for all the objects 
+=>static can be acceses just by using class name it need not be access but creating a object using new word n then by . 
+=>for static only once the memory is given,n for object repeatedly memory is provided
