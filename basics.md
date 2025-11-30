@@ -160,6 +160,29 @@ All methods are Public and abstract by default (until Java 7)
 
 =============================================================================================
 STATIC
+static is a keyword used to share the same variable/method among all objects of a class.
+It belongs to the class, not to individual objects
+
 =>this is not for single object its same for all the objects 
 =>static can be acceses just by using class name it need not be access but creating a object using new word n then by . 
 =>for static only once the memory is given,n for object repeatedly memory is provided
+
+Where can we use static?
+| Static Used With   | Meaning                                       |
+| ------------------ | --------------------------------------------- |
+| **Variables**      | One copy shared by all objects                |
+| **Methods**        | Can be called without creating object         |
+| **Blocks**         | Executes once when class is loaded            |
+| **Nested Classes** | Can access only static members of outer class |
+
+Properties of Static
+
+Memory allocated only once
+Can be accessed using class name
+Static methods cannot use non-static variables directly
+Static methods cannot use this or super
+Useful for utility or helper methods
+
+In Interview (Short Answer)
+
+❝Static means class-level. Shared by all objects, memory saves, accessible using class name, and static methods can’t use instance members directly.❞
